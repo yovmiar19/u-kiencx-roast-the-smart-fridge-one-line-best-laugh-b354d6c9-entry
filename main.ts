@@ -1,10 +1,12 @@
 // Roast the Smart Fridge: One Line, Best Laugh Wins
-// The fridge speaks: one line, one sentence, 145 chars (gate: max 160).
+// The fridge speaks: one line, one sentence, 131 chars (gate: max 160).
+// Line: Opus 5.5 Thinking #4 — the yogurt that expired on Tuesday, and the
+// six dismissed alerts that out-commit the owner. Deadpan, specific, in-gate.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const LINE =
-  "You ignore my 'milk expires tomorrow' alert for three days, then yell at me for not reminding you while you pour curdled regret into your cereal.";
+  "Your yogurt expired on Tuesday and you've dismissed my alert six times, which is more commitment than you've ever shown the yogurt.";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 
